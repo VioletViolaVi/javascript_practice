@@ -15,7 +15,6 @@ function vowelCounter(wordStr) {
 
     // for containing total num of vowels
     let totalNumOfVowels = 0;
-
     // iterate (1 by 1) through word string
     for (let i = 0; i < lowerCaseStr.length; i++) {
 

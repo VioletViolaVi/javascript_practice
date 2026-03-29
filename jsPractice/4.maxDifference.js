@@ -3,14 +3,13 @@
 
 Write a function that finds the largest difference between any two numbers in an array.
 
-Example:
 
 [3,10,6] → 10 - 3 = 7
 */
 
 function maxDiff(numsArr) {
 
-    
+
     let finalValDifference = 0;
     let currentValDifference = 0;
 
@@ -31,16 +30,16 @@ function maxDiff(numsArr) {
             // finds largest value difference
             if (currentValDifference > finalValDifference) {
                 // only reassigns if newer value is larger
-                finalValDifference = currentValDifference
+                finalValDifference = currentValDifference;
             }
-            
+
         }
     }
     console.log(currentValDifference); // just checks
-    
+
     // returns max diff. value
     return finalValDifference;
-    
+
 }
 maxDiff([3, 10, 6]);
 console.log(`final answer => ${maxDiff([3, 10, 6])}`);

@@ -14,7 +14,6 @@ N = 5 → 1,2,Fizz,4,Buzz
 */
 
 function fizzBuzz(N_number) {
-
     // to continue for duration of 'N' number
     for (let i = 0; i < N_number + 1; i++) {
 

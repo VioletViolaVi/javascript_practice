@@ -4,7 +4,6 @@
 Write a function that takes an array and returns an array of running totals.
 
 Example:
-
 [1,2,3] → [1, 3, 6]  // 1, 1+2=3, 1+2+3=6
 [5,1,4] → [5, 6, 10]  // 5, 5+1=6, 5+1+4=10
 */
