@@ -1,0 +1,60 @@
+# drafts from question 8
+
+# 1.
+# function sumOfDigits(originalNum) {
+
+#     // holds number total
+#     let total = 0;
+
+#     // convert number to string
+#     let stringVer = String(originalNum);
+#     console.log(`stringVer => ${stringVer}`);
+
+#     // convert string to array
+#     let arrVer = stringVer.split("");
+#     console.log(`arrVer => ${arrVer}`);
+
+#     // iterate through array of strings
+#     for (let i = 0; i < arrVer.length; i++) {
+
+#         // convert each string back to numbers
+#         let numVer = Number(arrVer[i]);
+
+#         // adds digits together
+#         total += numVer;
+
+#         // ensures single digits end answers only
+#         if (String(total).length !== 1) {
+#             console.log(String(total).split(""));
+#         }
+#         // console.log(total);     
+#     }
+# }
+# sumOfDigits(987);
+
+
+# 2. 
+# function sumOfDigits(originalNum) {
+
+#     // convert provided number to STRING
+#     let stringNum = String(originalNum);
+
+#     console.log(`OG => ${stringNum}`);
+#     console.log(`length => ${stringNum.length}`);
+
+#     let total = 0;
+#     while (stringNum.length !== 1) {
+        
+#         for (let i = 0; i < stringNum.length; i++) {
+#             total += Number(stringNum[i]);
+#             console.log(`Number(stringNum[i]) => ${Number(stringNum[i])}`);                      
+#             console.log(`stringNum => ${stringNum}`);                      
+#             console.log(`total => ${total}`);                      
+#             console.log(`total's type => ${typeof total}`);                      
+#             let updatedNumStr = stringNum.replace(stringNum[i],"");                      
+#             console.log(`stringNum.replace(stringNum[i],"") => ${updatedNumStr}`);                       
+#             console.log(`stringNum AFTER REPLACING => ${stringNum}`);            
+#         }
+#     }   
+# }
+# sumOfDigits(987);

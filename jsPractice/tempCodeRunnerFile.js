@@ -1,1 +1,2 @@
-+ 1
+
+        console.log(`length: ${String(total).length}`); 
